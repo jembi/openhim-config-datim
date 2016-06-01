@@ -126,7 +126,51 @@
       ],
       "type": "http"
     },
-    {
+	{
+	      "description": "Sync DATIM-Map with DATIM-Global",
+	      "matchContentJson": null,
+	      "matchContentRegex": null,
+	      "matchContentValue": null,
+	      "matchContentXpath": null,
+	      "name": "DATIM-Map",
+	      "pollingSchedule": null,
+	      "requestBody": true,
+	      "responseBody": true,
+	      "tcpHost": null,
+	      "tcpPort": null,
+	      "urlPattern": "^/node/ilr/CSD($|/.*)",
+	      "rewriteUrlsConfig": [],
+	      "addAutoRewriteRules": true,
+	      "rewriteUrls": false,
+	      "status": "enabled",
+	      "alerts": [],
+	      "txRerunAcl": [],
+	      "txViewFullAcl": [],
+	      "txViewAcl": [],
+	      "properties": [],
+	      "matchContentTypes": [],
+	      "routes": [
+	        {
+	          "name": "DATIM-Map",
+	          "secured": true,
+	          "host": "test-node-ohie.datim.org",
+	          "port": 443,
+	          "path": "",
+	          "pathTransform": "s/node\\/ilr/ILR/",
+	          "primary": true,
+	          "username": "",
+	          "password": "",
+	          "type": "http"
+	        }
+	      ],
+	      "authType": "private",
+	      "whitelist": [],
+	      "allow": [
+	        "metadata"
+	      ],
+	      "type": "http"
+	    },
+	{
       "matchContentJson": null,
       "matchContentRegex": null,
       "matchContentValue": null,
